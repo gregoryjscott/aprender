@@ -1,0 +1,10 @@
+{
+  "name": "conjugate",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "spanish": "node spanish.js"
+  },
+  "author": "Greg Scott",
+  "license": "MIT"
+}

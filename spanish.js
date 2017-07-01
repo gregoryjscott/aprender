@@ -115,9 +115,14 @@ function oops() {
 
 process.stdin.setEncoding('utf8')
 process.stdin.on('readable', () => {
-  const answer = process.stdin.read()
+  let answer = process.stdin.read()
+
   if (answer !== null) {
-    checkAnswer(answer.trim())
+    answer = answer.trim()
+
+    if (answer === 'salida') process.exit()
+
+    checkAnswer(answer)
     askQuestion()
   }
 })

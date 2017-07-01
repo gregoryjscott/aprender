@@ -1,4 +1,4 @@
-function start(askQuestion, checkAnswer) {
+function start(quiz) {
   process.stdin.setEncoding('utf8')
   process.stdin.on('readable', () => {
     let answer = process.stdin.read()
@@ -11,13 +11,13 @@ function start(askQuestion, checkAnswer) {
         process.exit()
       }
 
-      checkAnswer(answer)
-      askQuestion()
+      quiz.checkAnswer(answer)
+      quiz.askQuestion()
     }
   })
 
   clearScreen()
-  askQuestion()
+  quiz.askQuestion()
 }
 
 function clearScreen() {

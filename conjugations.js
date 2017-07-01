@@ -65,4 +65,4 @@ function oops() {
   throw new Error(`Something went wrong.`)
 }
 
-quiz.start(askQuestion, checkAnswer)
+quiz.start({ askQuestion, checkAnswer })

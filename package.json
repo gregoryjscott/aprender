@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "conjugations": "node conjugations.js",
-    "definitions": "node definitions.js",
+    "pronouns": "node pronouns.js",
+    "verbs": "node verbs.js",
     "numbers": "node numbers.js"
   },
   "author": "Greg Scott",

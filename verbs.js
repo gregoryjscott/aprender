@@ -7,22 +7,11 @@ const languages = [
   'English'
 ]
 
-const wordTypes = [
-  'pronoun',
-  'verb'
-]
-
 let language, word, definition, yes
 
 function askQuestion() {
   language = languages[random(languages.length - 1)]
-  wordType = wordTypes[random(wordTypes.length - 1)]
-
-  if (wordType === 'pronoun') {
-    word = words.pronouns[random(words.pronouns.length - 1)]
-  } else {
-    word = words.verbs[random(words.verbs.length - 1)]
-  }
+  word = words.verbs[random(words.verbs.length - 1)]
 
   if (language === 'Spanish') {
     yes = 'Si'

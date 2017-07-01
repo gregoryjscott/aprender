@@ -1,5 +1,5 @@
-const words = require('./words')
+const { numbers } = require('./words')
 const define = require('./define')
 const quiz = require('./quiz')
 
-quiz.start(define(words.numbers))
+quiz.start(define(numbers))

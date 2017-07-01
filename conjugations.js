@@ -1,5 +1,6 @@
 const colors = require('colors/safe')
 const words = require('./words')
+const quiz = require('./quiz')
 
 let pronoun, verb
 
@@ -68,23 +69,4 @@ function oops() {
   throw new Error(`Something went wrong.`)
 }
 
-function clearScreen() {
-  process.stdout.write('\u001B[2J\u001B[0;0f')
-}
-
-process.stdin.setEncoding('utf8')
-process.stdin.on('readable', () => {
-  let answer = process.stdin.read()
-
-  if (answer !== null) {
-    answer = answer.trim()
-
-    if (answer === 'salida') process.exit()
-
-    checkAnswer(answer)
-    askQuestion()
-  }
-})
-
-clearScreen()
-askQuestion()
+quiz.start(askQuestion, checkAnswer)

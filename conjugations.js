@@ -5,7 +5,7 @@ const quiz = require('./quiz')
 let pronoun, verb
 
 function askQuestion() {
-  pronoun = words.pronouns[random(words.pronouns.length - 1)]
+  pronoun = words.pronouns[random(words.pronouns.length - 1)].spanish
   verb = words.verbs[random(words.verbs.length - 1)].spanish
 
   console.log(`Conjugate the verb "${verb}" for the pronoun "${pronoun}".`)

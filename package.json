@@ -1,7 +1,7 @@
 {
-  "name": "spanish",
+  "name": "aprender",
   "version": "0.0.0",
-  "description": "",
+  "description": "CLI to help me learn Spanish.",
   "scripts": {
     "conjugations": "node conjugations.js",
     "pronouns": "node pronouns.js",

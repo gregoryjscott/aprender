@@ -1,56 +1,11 @@
-var colors = require('colors/safe')
-
-const pronouns = [
-  'Yo',
-  'Tu',
-  'El',
-  'Ella',
-  'Usted',
-  'Nosotros',
-  'Nosotras',
-  'Ellos',
-  'Ellas',
-  'Ustedes'
-]
-
-const verbs = [
-  'repitir',
-  'eschuchar',
-  'mirar',
-  'abrir',
-  'cantar',
-  'estudiar',
-  'preparar',
-  'escribir',
-  'entrar',
-  'hablar',
-  'vender',
-  'necesitar',
-  'tomar',
-  'practicar',
-  'bailar',
-  'viajar',
-  'comprar',
-  'comprender',
-  'llamar',
-  'vivir',
-  'trabajar',
-  'bajar',
-  'tocar',
-  'pasar',
-  'leer',
-  'correr',
-  'indicar',
-  'visitar',
-  'caminar',
-  'amar'
-]
+const colors = require('colors/safe')
+const words = require('./words')
 
 let pronoun, verb
 
 function askQuestion() {
-  pronoun = pronouns[random(pronouns.length - 1)]
-  verb = verbs[random(verbs.length - 1)]
+  pronoun = words.pronouns[random(words.pronouns.length - 1)]
+  verb = words.verbs[random(words.verbs.length - 1)]
 
   console.log(`Conjugate the verb "${verb}" for the pronoun "${pronoun}".`)
 }
@@ -113,6 +68,10 @@ function oops() {
   throw new Error(`Something went wrong.`)
 }
 
+function clearScreen() {
+  process.stdout.write('\u001B[2J\u001B[0;0f')
+}
+
 process.stdin.setEncoding('utf8')
 process.stdin.on('readable', () => {
   let answer = process.stdin.read()
@@ -127,4 +86,5 @@ process.stdin.on('readable', () => {
   }
 })
 
+clearScreen()
 askQuestion()

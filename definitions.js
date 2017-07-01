@@ -2,24 +2,40 @@ var colors = require('colors/safe')
 const words = require('./words')
 const quiz = require('./quiz')
 
-let verb
+const languages = [
+  'Spanish',
+  'English'
+]
+
+let verb, language, word, definition, yes
 
 function askQuestion() {
+  language = languages[random(languages.length - 1)]
   verb = words.verbs[random(words.verbs.length - 1)]
 
-  console.log(`What is "to ${verb.english}" in Spanish?`)
+  if (language === 'Spanish') {
+    yes = 'Si'
+    word = verb.english
+    definition = verb.spanish
+  } else {
+    yes = 'Yes'
+    word = verb.spanish
+    definition = verb.english
+  }
+
+  console.log(`What is "${word}" in ${language}?`)
 }
 
 function checkAnswer(answer) {
-  if (answer === verb.spanish) {
-    console.log(colors.green(`Si, Si, Si! "${answer}" is correct!\n`))
+  if (answer === definition) {
+    console.log(colors.green(`${yes}, ${yes}, ${yes}! "${answer}" is correct!\n`))
   } else {
-    console.log(colors.red(`No. It's "${verb.spanish}".\n`))
+    console.log(colors.red(`No. It's "${definition}".\n`))
   }
 }
 
 function random(max) {
-  return Math.floor(Math.random() * max)
+  return Math.round(Math.random() * max)
 }
 
 quiz.start(askQuestion, checkAnswer)

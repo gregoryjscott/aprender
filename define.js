@@ -1,4 +1,5 @@
 const colors = require('colors/safe')
+const random = require('./random')
 
 function define(words) {
   const languages = [
@@ -10,8 +11,8 @@ function define(words) {
 
   return {
     askQuestion: () => {
-      const language = languages[random(languages.length - 1)]
-      word = words[random(words.length - 1)]
+      const language = random(languages)
+      word = random(words)
 
       if (language === 'Spanish') {
         yes = 'Si'
@@ -34,10 +35,6 @@ function define(words) {
       }
     }
   }
-}
-
-function random(max) {
-  return Math.round(Math.random() * max)
 }
 
 module.exports = define

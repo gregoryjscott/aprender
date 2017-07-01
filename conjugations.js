@@ -1,12 +1,13 @@
 const colors = require('colors/safe')
 const words = require('./words')
 const quiz = require('./quiz')
+const random = require('./random')
 
 let pronoun, verb
 
 function askQuestion() {
-  pronoun = words.pronouns[random(words.pronouns.length - 1)].spanish
-  verb = words.verbs[random(words.verbs.length - 1)].spanish
+  pronoun = random(words.pronouns).spanish
+  verb = random(words.verbs).spanish
 
   console.log(`Conjugate the verb "${verb}" for the pronoun "${pronoun}".`)
 }
@@ -58,10 +59,6 @@ function determineCorrectAnswer() {
 
 function dropEnding(verb) {
   return verb.substr(0, verb.length - 2)
-}
-
-function random(max) {
-  return Math.floor(Math.random() * max)
 }
 
 function oops() {

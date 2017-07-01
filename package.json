@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "conjugations": "node conjugations.js"
+    "conjugations": "node conjugations.js",
+    "definitions": "node definitions.js"
   },
   "author": "Greg Scott",
   "license": "MIT",

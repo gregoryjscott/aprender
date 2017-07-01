@@ -4,10 +4,10 @@ const pronouns = [
   { spanish: 'El', english: 'He' },
   { spanish: 'Ella', english: 'She' },
   { spanish: 'Usted', english: 'You (formal)' },
-  { spanish: 'Nosotros', english: 'We (men or mixed)' },
-  { spanish: 'Nosotras', english: 'We (women)' },
-  { spanish: 'Ellos', english: 'They (men or mixed)' },
-  { spanish: 'Ellas', english: 'They (women)' },
+  { spanish: 'Nosotros', english: 'We (male)' },
+  { spanish: 'Nosotras', english: 'We (female)' },
+  { spanish: 'Ellos', english: 'They (male)' },
+  { spanish: 'Ellas', english: 'They (female)' },
   { spanish: 'Ustedes', english: "Y'all" }
 ]
 

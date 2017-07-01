@@ -1,4 +1,4 @@
-var colors = require('colors/safe')
+const colors = require('colors/safe')
 const words = require('./words')
 const define = require('./define')
 const quiz = require('./quiz')

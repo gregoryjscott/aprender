@@ -1,4 +1,4 @@
-var colors = require('colors/safe')
+const colors = require('colors/safe')
 
 function define(words) {
   const languages = [
@@ -6,11 +6,11 @@ function define(words) {
     'English'
   ]
 
-  let language, word, definition, yes
+  let word, definition, yes
 
   return {
     askQuestion: () => {
-      language = languages[random(languages.length - 1)]
+      const language = languages[random(languages.length - 1)]
       word = words[random(words.length - 1)]
 
       if (language === 'Spanish') {

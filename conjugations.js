@@ -12,7 +12,7 @@ function askQuestion() {
 }
 
 function checkAnswer(answer) {
-  let correctAnswer = determineCorrectAnswer(verb)
+  const correctAnswer = determineCorrectAnswer(verb)
 
   if (answer === correctAnswer) {
     console.log(colors.green(`Si, Si, Si! "${pronoun} ${answer}" is correct!\n`))
@@ -22,9 +22,8 @@ function checkAnswer(answer) {
 }
 
 function determineCorrectAnswer() {
-  let start, middle
-
-  start = dropEnding(verb)
+  const start = dropEnding(verb)
+  let middle
 
   if (verb.endsWith('ar')) {
     middle = 'a'

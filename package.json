@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "conjugations": "node conjugations.js",
-    "definitions": "node definitions.js"
+    "definitions": "node definitions.js",
+    "numbers": "node numbers.js"
   },
   "author": "Greg Scott",
   "license": "MIT",

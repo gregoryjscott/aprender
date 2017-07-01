@@ -44,7 +44,22 @@ const verbs = [
   { spanish: 'amar', english: 'to love' }
 ]
 
+const numbers = [
+  { spanish: 'cero', english: '0' },
+  { spanish: 'uno', english: '1' },
+  { spanish: 'dos', english: '2' },
+  { spanish: 'tres', english: '3' },
+  { spanish: 'cuatro', english: '4' },
+  { spanish: 'cinco', english: '5' },
+  { spanish: 'seis', english: '6' },
+  { spanish: 'siete', english: '7' },
+  { spanish: 'ocho', english: '8' },
+  { spanish: 'nueve', english: '9' },
+  { spanish: 'diez', english: '10' },
+]
+
 module.exports = {
   pronouns,
-  verbs
+  verbs,
+  numbers
 }

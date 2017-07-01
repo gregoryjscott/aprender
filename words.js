@@ -13,7 +13,7 @@ const pronouns = [
 
 const verbs = [
   { spanish: 'repitir', english: 'to repeat' },
-  { spanish: 'eschuchar', english: 'to speak' },
+  { spanish: 'eschuchar', english: 'to listen' },
   { spanish: 'mirar', english: 'to watch' },
   { spanish: 'abrir', english: 'to open' },
   { spanish: 'cantar', english: 'to sing' },

@@ -1,7 +1,3 @@
-function clearScreen() {
-  process.stdout.write('\u001B[2J\u001B[0;0f')
-}
-
 function start(askQuestion, checkAnswer) {
   process.stdin.setEncoding('utf8')
   process.stdin.on('readable', () => {
@@ -22,6 +18,10 @@ function start(askQuestion, checkAnswer) {
 
   clearScreen()
   askQuestion()
+}
+
+function clearScreen() {
+  process.stdout.write('\u001B[2J\u001B[0;0f')
 }
 
 module.exports = {

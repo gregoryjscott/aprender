@@ -1,3 +1,5 @@
+var colors = require('colors/safe')
+
 const pronouns = [
   'Yo',
   'Tu',
@@ -57,9 +59,9 @@ function checkAnswer(answer) {
   let correctAnswer = determineCorrectAnswer(verb)
 
   if (answer === correctAnswer) {
-    console.log(`Si, Si, Si! "${pronoun} ${answer}" is correct!\n`)
+    console.log(colors.green(`Si, Si, Si! "${pronoun} ${answer}" is correct!\n`))
   } else {
-    console.log(`No. It's ${pronoun} "${correctAnswer}".\n`)
+    console.log(colors.red(`No. It's ${pronoun} "${correctAnswer}".\n`))
   }
 }
 

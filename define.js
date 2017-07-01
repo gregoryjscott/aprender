@@ -1,7 +1,7 @@
 const colors = require('colors/safe')
 const random = require('./random')
 
-function define(words) {
+module.exports = function (words) {
   const languages = [
     'Spanish',
     'English'
@@ -36,5 +36,3 @@ function define(words) {
     }
   }
 }
-
-module.exports = define

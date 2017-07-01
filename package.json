@@ -1,9 +1,9 @@
 {
-  "name": "conjugate",
+  "name": "spanish",
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "start": "node spanish.js"
+    "conjugations": "node conjugations.js"
   },
   "author": "Greg Scott",
   "license": "MIT",

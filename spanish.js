@@ -44,7 +44,7 @@ const verbs = [
   'amar'
 ]
 
-let pronoun, verb, answer
+let pronoun, verb
 
 function askQuestion() {
   pronoun = pronouns[random(pronouns.length - 1)]

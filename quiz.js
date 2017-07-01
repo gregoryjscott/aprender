@@ -10,7 +10,10 @@ function start(askQuestion, checkAnswer) {
     if (answer !== null) {
       answer = answer.trim()
 
-      if (answer === 'salida') process.exit()
+      if (answer === 'salida') {
+        clearScreen()
+        process.exit()
+      }
 
       checkAnswer(answer)
       askQuestion()

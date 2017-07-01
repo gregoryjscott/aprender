@@ -12,18 +12,43 @@ const pronouns = [
 ]
 
 const verbs = [
-  'abrir'
+  'repitir',
+  'eschuchar',
+  'mirar',
+  'abrir',
+  'cantar',
+  'estudiar',
+  'preparar',
+  'escribir',
+  'entrar',
+  'hablar',
+  'vender',
+  'necesitar',
+  'tomar',
+  'practicar',
+  'bailar',
+  'viajar',
+  'comprar',
+  'comprender',
+  'llamar',
+  'vivir',
+  'trabajar',
+  'bajar',
+  'tocar',
+  'pasar',
+  'leer',
+  'correr',
+  'indicar',
+  'visitar',
+  'caminar',
+  'amar'
 ]
 
 let pronoun, verb, answer
 
-function pick(max) {
-  return Math.floor(Math.random() * max)
-}
-
 function askQuestion() {
-  pronoun = pronouns[pick(pronouns.length - 1)]
-  verb = verbs[0]
+  pronoun = pronouns[random(pronouns.length - 1)]
+  verb = verbs[random(verbs.length - 1)]
 
   console.log(`Conjugate the verb "${verb}" for the pronoun "${pronoun}".`)
 }
@@ -41,7 +66,7 @@ function checkAnswer(answer) {
 function determineCorrectAnswer() {
   let start, middle
 
-  start = verb.substr(0, verb.length - 2)
+  start = dropEnding(verb)
 
   if (verb.endsWith('ar')) {
     middle = 'a'
@@ -50,7 +75,7 @@ function determineCorrectAnswer() {
   } else if (verb.endsWith('ir')) {
     middle = pronoun.startsWith('Nosotr') ? 'i' : 'e'
   } else {
-    bomb()
+    oops()
   }
 
   switch (pronoun) {
@@ -70,12 +95,20 @@ function determineCorrectAnswer() {
     case 'Ustedes':
       return `${start}${middle}n`
     default:
-      bomb()
+      oops()
   }
 }
 
-function bomb() {
-  throw new Error(`This must be Spanish I haven't learned about yet. Sorry.`)
+function dropEnding(verb) {
+  return verb.substr(0, verb.length - 2)
+}
+
+function random(max) {
+  return Math.floor(Math.random() * max)
+}
+
+function oops() {
+  throw new Error(`Something went wrong.`)
 }
 
 process.stdin.setEncoding('utf8')

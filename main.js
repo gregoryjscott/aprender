@@ -1,11 +1,13 @@
 const colors = require('colors/safe')
+const everything = require('./everything')
 
-const quizzes = [
+let quizzes = [
   require('./conjugations'),
   require('./numbers'),
   require('./pronouns'),
   require('./verbs')
 ]
+quizzes.push(everything(quizzes))
 
 let pickedQuiz
 

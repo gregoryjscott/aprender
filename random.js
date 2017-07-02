@@ -1,3 +1,3 @@
-module.exports = function (words) {
-  return words[Math.round(Math.random() * (words.length - 1))]
+module.exports = function (things) {
+  return things[Math.round(Math.random() * (things.length - 1))]
 }

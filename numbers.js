@@ -1,5 +1,10 @@
 const { numbers } = require('./words')
 const define = require('./define')
-const quiz = require('./quiz')
 
-quiz.start(define(numbers))
+const definitions = define(numbers)
+
+module.exports = {
+  name: 'Numbers',
+  askQuestion: definitions.askQuestion,
+  checkAnswer: definitions.checkAnswer
+}

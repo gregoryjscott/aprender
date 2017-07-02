@@ -3,10 +3,7 @@
   "version": "0.0.0",
   "description": "CLI to help me learn Spanish.",
   "scripts": {
-    "conjugations": "node conjugations.js",
-    "pronouns": "node pronouns.js",
-    "verbs": "node verbs.js",
-    "numbers": "node numbers.js"
+    "start": "node main.js"
   },
   "author": "Greg Scott",
   "license": "MIT",

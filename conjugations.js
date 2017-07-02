@@ -1,6 +1,5 @@
 const colors = require('colors/safe')
 const words = require('./words')
-const quiz = require('./quiz')
 const random = require('./random')
 
 let pronoun, verb
@@ -65,4 +64,8 @@ function oops() {
   throw new Error(`Something went wrong.`)
 }
 
-quiz.start({ askQuestion, checkAnswer })
+module.exports = {
+  name: 'Conjugations',
+  askQuestion,
+  checkAnswer
+}

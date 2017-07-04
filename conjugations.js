@@ -1,12 +1,13 @@
 const colors = require('colors/safe')
-const words = require('./words')
+const pronouns = require('./pronouns')
+const verbs = require('./verbs')
 const random = require('./random')
 
 let pronoun, verb
 
 function askQuestion() {
-  pronoun = random(words.pronouns).spanish
-  verb = random(words.verbs).spanish
+  pronoun = random(pronouns.words).spanish
+  verb = random(verbs.words).spanish
 
   console.log(`Conjugate the verb "${verb}" for the pronoun "${pronoun}".`)
 }

@@ -14,6 +14,7 @@ const definitions = define(days)
 
 module.exports = {
   name: 'Days', // Los Dias del la Semana
+  words: days,
   askQuestion: definitions.askQuestion,
   checkAnswer: definitions.checkAnswer
 }

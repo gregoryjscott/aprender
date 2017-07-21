@@ -28,6 +28,7 @@ const definitions = define(food)
 
 module.exports = {
   name: 'Food',
+  words: food,
   askQuestion: definitions.askQuestion,
   checkAnswer: definitions.checkAnswer
 }

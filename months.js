@@ -19,6 +19,7 @@ const definitions = define(months)
 
 module.exports = {
   name: 'Months', // Meses del Ano
+  words: months,
   askQuestion: definitions.askQuestion,
   checkAnswer: definitions.checkAnswer
 }

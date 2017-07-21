@@ -17,6 +17,7 @@ const definitions = define(pronouns)
 
 module.exports = {
   name: 'Pronouns',
+  words: pronouns,
   askQuestion: definitions.askQuestion,
   checkAnswer: definitions.checkAnswer
 }

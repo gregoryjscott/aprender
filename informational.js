@@ -60,6 +60,7 @@ let currentQuiz, questionToAnswer
 
 module.exports = {
   name: 'Informational',
+  words: informational,
   askQuestion: () => {
     currentQuiz = random(quizzes)
 
@@ -70,7 +71,6 @@ module.exports = {
       console.log(`Answer this question in Spanish: "${questionToAnswer.spanish}".`)
     }
   },
-
   checkAnswer: answer => {
     if (currentQuiz === 'definitions') {
       return definitions.checkAnswer(answer)

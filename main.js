@@ -29,6 +29,7 @@ function start() {
     const name = quizzes[i].name
     console.log(`  ${colors.grey(`Type ${number} to learn ${name}.`)}`)
   }
+  explainExit()
   console.log()
 }
 

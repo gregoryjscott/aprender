@@ -12,6 +12,7 @@ let quizzes = [
   require('./days'),
   require('./months'),
   require('./foods'),
+  require('./directions'),
   require('./city')
 ]
 quizzes.push(everything(quizzes))

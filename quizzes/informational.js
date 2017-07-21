@@ -38,12 +38,12 @@ const informational = [
     checkAnswer: answer => answerStartsWith(answer, 'Yo soy de')
   },
   {
-    spanish: '¿Cual es su número de teléfono?',
+    spanish: '¿Cuál es su número de teléfono?',
     english: 'What is your telephone number?',
     checkAnswer: answer => answerStartsWith(answer, 'Mi número es')
   },
   {
-    spanish: '¿Cuàl es su dirección?',
+    spanish: '¿Cuál es su dirección?',
     english: 'What is your address?',
     checkAnswer: answer => answerStartsWith(answer, 'Mi dirección es')
   }

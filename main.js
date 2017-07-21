@@ -2,6 +2,7 @@ const colors = require('colors/safe')
 const everything = require('./everything')
 
 let quizzes = [
+  require('./greetings'),
   require('./conjugations'),
   require('./verbs'),
   require('./pronouns'),

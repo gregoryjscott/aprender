@@ -7,6 +7,7 @@ let quizzes = [
   require('./verbs'),
   require('./pronouns'),
   require('./numbers'),
+  require('./colors'),
   require('./foods'),
   require('./city')
 ]

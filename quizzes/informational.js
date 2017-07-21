@@ -17,7 +17,12 @@ const informational = [
         console.log(colors.green(`Si, si, si! "${answer}" is correct!\n`))
         return true
       } else {
-        console.log(colors.red(`No. The answer should be one of the following: ${correctAnswers.join(', ')}.\n`))
+        const answersString = correctAnswers.join(', ')
+        console.log(
+          colors.red(
+            `No. The answer should be one of the following: ${answersString}.\n`
+          )
+        )
         return false
       }
     }
@@ -49,12 +54,14 @@ function answerStartsWith(answer, beginning) {
     console.log(colors.green(`Si, si, si! "${answer}" is correct!\n`))
     return true
   } else {
-    console.log(colors.red(`No. The answer should start with "${beginning}".\n`))
+    console.log(
+      colors.red(`No. The answer should start with "${beginning}".\n`)
+    )
     return false
   }
 }
 
-const quizzes = [ 'definitions', 'answerQuestionsInSpanish']
+const quizzes = ['definitions', 'answerQuestionsInSpanish']
 const definitions = define(informational)
 let currentQuiz, questionToAnswer
 
@@ -68,7 +75,9 @@ module.exports = {
       definitions.askQuestion()
     } else {
       questionToAnswer = random(informational)
-      console.log(`Answer this question in Spanish: "${questionToAnswer.spanish}".`)
+      console.log(
+        `Answer this question in Spanish: "${questionToAnswer.spanish}".`
+      )
     }
   },
   checkAnswer: answer => {

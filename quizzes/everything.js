@@ -11,7 +11,7 @@ function checkAnswer(answer) {
   return currentQuiz.checkAnswer(answer)
 }
 
-module.exports = function (quizzes) {
+module.exports = function(quizzes) {
   allQuizzes = quizzes
 
   return {

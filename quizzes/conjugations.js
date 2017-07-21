@@ -16,7 +16,9 @@ function checkAnswer(answer) {
   const correctAnswer = determineCorrectAnswer(verb)
 
   if (answer === correctAnswer) {
-    console.log(colors.green(`Si, Si, Si! "${pronoun} ${answer}" is correct!\n`))
+    console.log(
+      colors.green(`Si, Si, Si! "${pronoun} ${answer}" is correct!\n`)
+    )
     return true
   } else {
     console.log(colors.red(`No. It's ${pronoun} "${correctAnswer}".\n`))

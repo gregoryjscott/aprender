@@ -1,6 +1,6 @@
 const colors = require('colors/safe')
-const define = require('./define')
-const random = require('./random')
+const define = require('../define')
+const random = require('../random')
 
 const informational = [
   {

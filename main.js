@@ -1,20 +1,20 @@
 const colors = require('colors/safe')
-const everything = require('./everything')
+const everything = require('./quizzes/everything')
 
 let quizzes = [
-  require('./greetings'),
-  require('./informational'),
-  require('./verbs'),
-  require('./pronouns'),
-  require('./conjugations'),
-  require('./numbers'),
-  require('./holidays'),
-  require('./colors'),
-  require('./days'),
-  require('./months'),
-  require('./foods'),
-  require('./directions'),
-  require('./city')
+  require('./quizzes/greetings'),
+  require('./quizzes/informational'),
+  require('./quizzes/verbs'),
+  require('./quizzes/pronouns'),
+  require('./quizzes/conjugations'),
+  require('./quizzes/numbers'),
+  require('./quizzes/holidays'),
+  require('./quizzes/colors'),
+  require('./quizzes/days'),
+  require('./quizzes/months'),
+  require('./quizzes/foods'),
+  require('./quizzes/directions'),
+  require('./quizzes/city')
 ]
 quizzes.push(everything(quizzes))
 

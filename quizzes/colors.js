@@ -1,4 +1,4 @@
-const define = require('./define')
+const define = require('../define')
 
 const colors = [
   { spanish: 'azul', english: 'blue' },

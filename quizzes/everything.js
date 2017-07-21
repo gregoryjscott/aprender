@@ -1,4 +1,4 @@
-const random = require('./random')
+const random = require('../random')
 
 let allQuizzes, currentQuiz
 

@@ -1,7 +1,7 @@
 const colors = require('colors/safe')
 const pronouns = require('./pronouns')
 const verbs = require('./verbs')
-const random = require('./random')
+const random = require('../random')
 
 let pronoun, verb
 

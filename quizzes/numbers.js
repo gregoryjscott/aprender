@@ -1,4 +1,4 @@
-const define = require('./define')
+const define = require('../define')
 
 const numbers = [
   { spanish: 'cero', english: '0' },

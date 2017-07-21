@@ -1,4 +1,4 @@
-const define = require('./define')
+const define = require('../define')
 
 const days = [
   { spanish: 'domingo', english: 'Sunday' },

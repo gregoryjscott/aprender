@@ -17,6 +17,8 @@ let quizzes = [
 quizzes.push(everything(quizzes))
 
 let pickedQuiz
+let correctCount = 0
+let totalCount = 0
 
 function start() {
   process.stdin.setEncoding('utf8')
@@ -49,7 +51,11 @@ function readAnswer() {
       pickedQuiz.askQuestion()
       explainExit()
     } else {
-      pickedQuiz.checkAnswer(answer)
+      const correct = pickedQuiz.checkAnswer(answer)
+
+      if (correct) correctCount++
+      totalCount++
+
       pickedQuiz.askQuestion()
       explainExit()
     }
@@ -76,6 +82,11 @@ function explainExit() {
 
 function stop() {
   clearScreen()
+
+  const percentage = Math.round(correctCount/totalCount * 100, 2)
+  console.log()
+  console.log(`Your score is ${correctCount} / ${totalCount} = ${percentage}%.`)
+  console.log()
   process.exit()
 }
 

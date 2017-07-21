@@ -30,8 +30,10 @@ module.exports = function (words) {
     checkAnswer: answer => {
       if (answer.toLowerCase() === definition.toLowerCase()) {
         console.log(colors.green(`${yes}, ${yes}, ${yes}! "${answer}" is correct!\n`))
+        return true
       } else {
         console.log(colors.red(`No. It's "${definition}".\n`))
+        return false
       }
     }
   }

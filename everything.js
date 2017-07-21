@@ -8,7 +8,7 @@ function askQuestion() {
 }
 
 function checkAnswer(answer) {
-  currentQuiz.checkAnswer(answer)
+  return currentQuiz.checkAnswer(answer)
 }
 
 module.exports = function (quizzes) {

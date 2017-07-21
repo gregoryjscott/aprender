@@ -8,6 +8,7 @@ let quizzes = [
   require('./pronouns'),
   require('./numbers'),
   require('./colors'),
+  require('./days'),
   require('./months'),
   require('./foods'),
   require('./city')

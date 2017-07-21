@@ -4,12 +4,12 @@ const random = require('../random')
 
 const informational = [
   {
-    spanish: 'Como se llama?',
+    spanish: '¿Cómo se llama?',
     english: 'What is your name?',
     checkAnswer: answer => answerStartsWith(answer, 'Yo me llamo')
   },
   {
-    spanish: 'Como esta?',
+    spanish: '¿Cómo está?',
     english: 'How are you?',
     checkAnswer: answer => {
       const correctAnswers = ['bien', 'mal']
@@ -28,30 +28,30 @@ const informational = [
     }
   },
   {
-    spanish: 'Donde vive?',
+    spanish: '¿Dónde vive?',
     english: 'Where do you live?',
     checkAnswer: answer => answerStartsWith(answer, 'Yo vivo en')
   },
   {
-    spanish: 'De donde es?',
+    spanish: '¿De dónde es?',
     english: 'Where are you from?',
     checkAnswer: answer => answerStartsWith(answer, 'Yo soy de')
   },
   {
-    spanish: 'Cual es su numero de telefono?',
+    spanish: '¿Cual es su número de teléfono?',
     english: 'What is your telephone number?',
-    checkAnswer: answer => answerStartsWith(answer, 'Mi numero es')
+    checkAnswer: answer => answerStartsWith(answer, 'Mi número es')
   },
   {
-    spanish: 'Cual es su direccion?',
+    spanish: '¿Cuàl es su dirección?',
     english: 'What is your address?',
-    checkAnswer: answer => answerStartsWith(answer, 'Mi direccion es')
+    checkAnswer: answer => answerStartsWith(answer, 'Mi dirección es')
   }
 ]
 
 function answerStartsWith(answer, beginning) {
   if (answer.toLowerCase().startsWith(beginning.toLowerCase())) {
-    console.log(colors.green(`Si, si, si! "${answer}" is correct!\n`))
+    console.log(colors.green(`Sí, sí, sí! "${answer}" is correct!\n`))
     return true
   } else {
     console.log(

@@ -3,10 +3,11 @@ const everything = require('./everything')
 
 let quizzes = [
   require('./greetings'),
-  require('./conjugations'),
   require('./verbs'),
   require('./pronouns'),
+  require('./conjugations'),
   require('./numbers'),
+  require('./holidays'),
   require('./colors'),
   require('./days'),
   require('./months'),

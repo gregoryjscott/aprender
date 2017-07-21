@@ -42,7 +42,6 @@ const definitions = define(city)
 
 module.exports = {
   name: 'City', // La Ciudad
-  words: city,
   askQuestion: definitions.askQuestion,
   checkAnswer: definitions.checkAnswer
 }

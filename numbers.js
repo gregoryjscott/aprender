@@ -39,7 +39,6 @@ const definitions = define(numbers)
 
 module.exports = {
   name: 'Numbers',
-  words: numbers,
   askQuestion: definitions.askQuestion,
   checkAnswer: definitions.checkAnswer
 }

@@ -11,7 +11,6 @@ const definitions = define(directions)
 
 module.exports = {
   name: 'Directions',
-  words: directions,
   askQuestion: definitions.askQuestion,
   checkAnswer: definitions.checkAnswer
 }

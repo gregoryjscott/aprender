@@ -16,7 +16,6 @@ const definitions = define(colors)
 
 module.exports = {
   name: 'Colors',
-  words: colors,
   askQuestion: definitions.askQuestion,
   checkAnswer: definitions.checkAnswer
 }

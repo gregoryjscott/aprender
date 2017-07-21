@@ -13,7 +13,6 @@ const definitions = define(informational)
 
 module.exports = {
   name: 'Informational',
-  words: informational,
   askQuestion: definitions.askQuestion,
   checkAnswer: definitions.checkAnswer
 }

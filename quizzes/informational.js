@@ -45,7 +45,7 @@ const informational = [
   {
     spanish: 'Cual es su direccion?',
     english: 'What is your address?',
-    checkAnswer: answer => answerStartsWith(answer, 'Me direccion es')
+    checkAnswer: answer => answerStartsWith(answer, 'Mi direccion es')
   }
 ]
 

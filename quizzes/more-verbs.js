@@ -10,7 +10,7 @@ const verbs = [
   { spanish: 'quedar', english: 'to stay' },
   { spanish: 'desear', english: 'to desire' },
   { spanish: 'regresar', english: 'to return' },
-  { spanish: 'invitar', english: 'to invite' },
+  { spanish: 'invitar', english: 'to invite' }
 ]
 
 const definitions = define(verbs)

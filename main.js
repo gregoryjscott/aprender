@@ -15,6 +15,7 @@ let quizzes = [
   require('./quizzes/foods'),
   require('./quizzes/directions'),
   require('./quizzes/city'),
+  require('./quizzes/more-verbs'),
   require('./quizzes/family')
 ]
 quizzes.push(everything(quizzes))

@@ -13,7 +13,7 @@ function askQuestion() {
 }
 
 function checkAnswer(answer) {
-  const correctAnswer = determineCorrectAnswer(verb)
+  const correctAnswer = determineCorrectAnswer()
 
   if (answer === correctAnswer) {
     console.log(
@@ -27,7 +27,7 @@ function checkAnswer(answer) {
 }
 
 function determineCorrectAnswer() {
-  const start = dropEnding(verb)
+  const start = verb.substr(0, verb.length - 2)
   let middle
 
   if (verb.endsWith('ar')) {
@@ -59,10 +59,6 @@ function determineCorrectAnswer() {
     default:
       oops()
   }
-}
-
-function dropEnding(verb) {
-  return verb.substr(0, verb.length - 2)
 }
 
 function oops() {

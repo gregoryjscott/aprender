@@ -10,7 +10,17 @@ const verbs = [
   { spanish: 'quedar', english: 'to stay' },
   { spanish: 'desear', english: 'to desire' },
   { spanish: 'regresar', english: 'to return' },
-  { spanish: 'invitar', english: 'to invite' }
+  { spanish: 'invitar', english: 'to invite' },
+  { spanish: 'comer', english: 'to eat' },
+  { spanish: 'ayudar', english: 'to help' },
+  { spanish: 'agarrar', english: 'to grab' },
+  { spanish: 'deber', english: 'to owe' },
+  { spanish: 'llevar', english: 'to take' }, // to airport
+  { spanish: 'dejar', english: 'to leave' }, // behind
+  { spanish: 'ganar', english: 'to earn' }, // or win game
+  { spanish: 'gritar', english: 'to yell' },
+  { spanish: 'luchar', english: 'to fight' },
+  { spanish: 'creer', english: 'to believe' }
 ]
 
 const definitions = define(verbs)

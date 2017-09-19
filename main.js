@@ -19,7 +19,9 @@ let quizzes = [
   require('./quizzes/family'),
   require('./quizzes/questions'),
   require('./quizzes/seasons'),
-  require('./quizzes/weather')
+  require('./quizzes/weather'),
+  require('./quizzes/irregular-verbs'),
+  require('./quizzes/irregular-conjugations')
 ]
 quizzes.push(everything(quizzes))
 

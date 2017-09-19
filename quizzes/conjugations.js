@@ -1,9 +1,14 @@
 const colors = require('colors/safe')
 const pronouns = require('./pronouns')
-const verbs = require('./verbs')
+const initialVerbs = require('./verbs')
+const moreVerbs = require('./more-verbs')
 const random = require('../random')
 
 let pronoun, verb
+
+const verbs = {
+  words: initialVerbs.words.concat(moreVerbs.words)
+}
 
 function askQuestion() {
   pronoun = random(pronouns.words).spanish

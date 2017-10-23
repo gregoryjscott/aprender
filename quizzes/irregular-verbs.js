@@ -13,7 +13,22 @@ const verbs = [
   { spanish: 'ver', yo: 'veo', english: 'to see' },
   { spanish: 'saber', yo: 'se', english: 'to know facts' },
   { spanish: 'conocer', yo: 'conozco', english: 'to be familiar' },
-  { spanish: 'dar', yo: 'doy', english: 'to give' }
+  { spanish: 'dar', yo: 'doy', english: 'to give' },
+  {
+    spanish: 'ser',
+    yo: 'soy',
+    tu: 'eres',
+    el: 'es',
+    ella: 'es',
+    usted: 'es',
+    nosotros: 'somos',
+    nosotras: 'somos',
+    ellos: 'son',
+    ellas: 'son',
+    ustedes: 'son',
+    english: 'to be (permanent)'
+  },
+  { spanish: 'estar', yo: 'estoy', english: 'to be (temporary)'}
 ]
 
 const definitions = define(verbs)

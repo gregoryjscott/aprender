@@ -20,7 +20,17 @@ const verbs = [
   { spanish: 'ganar', english: 'to earn' }, // or win game
   { spanish: 'gritar', english: 'to yell' },
   { spanish: 'luchar', english: 'to fight' },
-  { spanish: 'creer', english: 'to believe' }
+  { spanish: 'creer', english: 'to believe' },
+  { spanish: 'cortar', english: 'to cut' },
+  { spanish: 'recibir', english: 'to receive' },
+  { spanish: 'usar', english: 'to use' },
+  { spanish: 'beber', english: 'to drink' },
+  { spanish: 'esperar', english: 'to wait' },
+  { spanish: 'terminar', english: 'to end' },
+  { spanish: 'cambiar', english: 'to change' },
+  { spanish: 'decidir', english: 'to decide' },
+  { spanish: 'olvidar', english: 'to forget' },
+  { spanish: 'ensenar', english: 'to teacher' }
 ]
 
 const definitions = define(verbs)

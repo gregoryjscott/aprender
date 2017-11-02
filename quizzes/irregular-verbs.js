@@ -28,7 +28,35 @@ const verbs = [
     ustedes: 'son',
     english: 'to be (permanent)'
   },
-  { spanish: 'estar', yo: 'estoy', english: 'to be (temporary)'}
+  { spanish: 'estar', yo: 'estoy', english: 'to be (temporary)'},
+  {
+    spanish: 'poder',
+    yo: 'puedo',
+    tu: 'puedes',
+    el: 'puede',
+    ella: 'puede',
+    usted: 'puede',
+    nosotros: 'podemos',
+    nosotras: 'podemos',
+    ellos: 'pueden',
+    ellas: 'pueden',
+    ustedes: 'pueden',
+    english: 'to be able'
+  },
+  {
+    spanish: 'ir',
+    yo: 'voy',
+    tu: 'vas',
+    el: 'va',
+    ella: 'va',
+    usted: 'va',
+    nosotros: 'vamos',
+    nosotras: 'vamos',
+    ellos: 'van',
+    ellas: 'van',
+    ustedes: 'van',
+    english: 'to go'
+  }
 ]
 
 const definitions = define(verbs)

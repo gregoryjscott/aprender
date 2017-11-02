@@ -1,28 +1,30 @@
+#! /usr/bin/env node
+
 const colors = require('colors/safe')
-const everything = require('./quizzes/everything')
+const everything = require('../quizzes/everything')
 
 let quizzes = [
-  require('./quizzes/greetings'),
-  require('./quizzes/informational'),
-  require('./quizzes/verbs'),
-  require('./quizzes/pronouns'),
-  require('./quizzes/conjugations'),
-  require('./quizzes/numbers'),
-  require('./quizzes/holidays'),
-  require('./quizzes/colors'),
-  require('./quizzes/days'),
-  require('./quizzes/months'),
-  require('./quizzes/foods'),
-  require('./quizzes/directions'),
-  require('./quizzes/city'),
-  require('./quizzes/family'),
-  require('./quizzes/questions'),
-  require('./quizzes/seasons'),
-  require('./quizzes/weather'),
-  require('./quizzes/irregular-verbs'),
-  require('./quizzes/irregular-conjugations'),
-  require('./quizzes/clothing'),
-  require('./quizzes/preterit-conjugations')
+  require('../quizzes/greetings'),
+  require('../quizzes/informational'),
+  require('../quizzes/verbs'),
+  require('../quizzes/pronouns'),
+  require('../quizzes/conjugations'),
+  require('../quizzes/numbers'),
+  require('../quizzes/holidays'),
+  require('../quizzes/colors'),
+  require('../quizzes/days'),
+  require('../quizzes/months'),
+  require('../quizzes/foods'),
+  require('../quizzes/directions'),
+  require('../quizzes/city'),
+  require('../quizzes/family'),
+  require('../quizzes/questions'),
+  require('../quizzes/seasons'),
+  require('../quizzes/weather'),
+  require('../quizzes/irregular-verbs'),
+  require('../quizzes/irregular-conjugations'),
+  require('../quizzes/clothing'),
+  require('../quizzes/preterit-conjugations')
 ]
 quizzes.push(everything(quizzes))
 

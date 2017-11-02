@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "description": "CLI to help me learn Spanish.",
   "scripts": {
-    "start": "node main.js",
     "format": "prettier --no-semi --single-quote --write **/*.js"
+  },
+  "bin": {
+    "aprender": "bin/aprender.js"
   },
   "author": "Greg Scott",
   "license": "MIT",

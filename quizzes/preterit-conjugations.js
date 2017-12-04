@@ -55,14 +55,14 @@ function determineCorrectAnswer() {
       case 'Yo':
         return `${start}í`
       case 'Tu':
-        return `${start}iste`
+        return `${start}íste`
       case 'El':
       case 'Ella':
       case 'Usted':
         return `${start}ió`
       case 'Nosotros':
       case 'Nosotras':
-        return `${start}imos`
+        return `${start}ímos`
       case 'Ellos':
       case 'Ellas':
       case 'Ustedes':

@@ -1,7 +1,8 @@
 const colors = require('colors/safe')
+const forgive = require('../forgive')
 const pronouns = require('./pronouns')
-const verbs = require('./irregular-verbs')
 const random = require('../random')
+const verbs = require('./verbs')
 
 let pronoun, verb
 
@@ -15,9 +16,9 @@ function askQuestion() {
 function checkAnswer(answer) {
   const correctAnswer = determineCorrectAnswer()
 
-  if (answer === correctAnswer) {
+  if (forgive(answer) === forgive(correctAnswer)) {
     console.log(
-      colors.green(`Si, Si, Si! "${pronoun.spanish} ${answer}" is correct!\n`)
+      colors.green(`Si, Si, Si! "${pronoun.spanish} ${correctAnswer}" is correct!\n`)
     )
     return true
   } else {

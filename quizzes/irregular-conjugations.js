@@ -1,14 +1,16 @@
 const colors = require('colors/safe')
 const forgive = require('../forgive')
 const pronouns = require('./pronouns')
-const random = require('../random')
-const verbs = require('./verbs')
+const picker = require('../picker')
+const verbs = require('./irregular-verbs')
 
 let pronoun, verb
+const pronounPicker = picker(pronouns.words)
+const verbPicker = picker(verbs.words)
 
 function askQuestion() {
-  pronoun = random(pronouns.words)
-  verb = random(verbs.words)
+  pronoun = pronounPicker.next()
+  verb = verbPicker.next()
 
   console.log(`Conjugate the verb "${verb.spanish}" for the pronoun "${pronoun.spanish}".`)
 }

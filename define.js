@@ -1,5 +1,6 @@
 const colors = require('colors/safe')
 const random = require('./random')
+const picker = require('./picker')
 
 module.exports = function (words) {
   const languages = [
@@ -8,11 +9,12 @@ module.exports = function (words) {
   ]
 
   let word, definition, yes
+  const wordPicker = picker(words)
 
   return {
     askQuestion: () => {
       const language = random(languages)
-      word = random(words)
+      word = wordPicker.next()
 
       if (language === 'Spanish') {
         yes = 'Si'

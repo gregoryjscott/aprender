@@ -1,7 +1,6 @@
 const define = require('../define')
 
-const verbs = [
-  // First 30
+const first30 = [
   { spanish: 'repitir', english: 'to repeat' },
   { spanish: 'eschuchar', english: 'to listen' },
   { spanish: 'mirar', english: 'to watch' },
@@ -20,7 +19,7 @@ const verbs = [
   { spanish: 'viajar', english: 'to travel' },
   { spanish: 'comprar', english: 'to buy' },
   { spanish: 'comprender', english: 'to understand' },
-  { spanish: 'llamar', english: 'to called' },
+  { spanish: 'llamar', english: 'to call' },
   { spanish: 'vivir', english: 'to live' },
   { spanish: 'trabajar', english: 'to work' },
   { spanish: 'bajar', english: 'to lower' },
@@ -31,9 +30,10 @@ const verbs = [
   { spanish: 'indicar', english: 'to indicate' },
   { spanish: 'visitar', english: 'to visit' },
   { spanish: 'caminar', english: 'to walk' },
-  { spanish: 'amar', english: 'to love' },
+  { spanish: 'amar', english: 'to love' }
+]
 
-  // Second 30
+const second30 = [
   { spanish: 'llegar', english: 'to arrive' },
   { spanish: 'aprender', english: 'to learn' },
   { spanish: 'levantar', english: 'to lift' },
@@ -65,6 +65,41 @@ const verbs = [
   { spanish: 'olvidar', english: 'to forget' },
   { spanish: 'ensenar', english: 'to teacher' }
 ]
+
+const third30 = [
+  { spanish: 'abandonar', english: 'to abandon' },
+  { spanish: 'asar', english: 'to grill' },
+  { spanish: 'casar', english: 'to marry' },
+  { spanish: 'cortar', english: 'to cut' },
+  { spanish: 'deprimir', english: 'to depress' },
+  { spanish: 'desesperar', english: 'to despair' },
+  { spanish: 'divorciar', english: 'to divorce' },
+  { spanish: 'embarazar', english: 'to get pregnant' },
+  { spanish: 'enamorar', english: 'to fall in love' },
+  { spanish: 'asustar', english: 'to scare' },
+  { spanish: 'congelar', english: 'to freeze' },
+  { spanish: 'hervir', english: 'to boil' },
+  { spanish: 'lastimar', english: 'to hurt' },
+  { spanish: 'lavar', english: 'to wash' },
+  { spanish: 'observar', english: 'to observe' },
+  { spanish: 'querer', english: 'to want' },
+  { spanish: 'revisar', english: 'to review' },
+  { spanish: 'aburrir', english: 'to get bored' },
+  { spanish: 'cansar', english: 'to get tired' },
+  { spanish: 'divertir', english: 'to amuse' },
+  { spanish: 'enojar', english: 'to get angry' },
+  { spanish: 'hinchar', english: 'to swell' },
+  { spanish: 'mojar', english: 'to wet' },
+  { spanish: 'ordenar', english: 'to order' },
+  { spanish: 'organizar', english: 'to organize' },
+  { spanish: 'pesar', english: 'to weigh' },
+  { spanish: 'pudrir', english: 'to rot' },
+  { spanish: 'quebrar', english: 'to break' },
+  { spanish: 'quemar', english: 'to burn' },
+  { spanish: 'usar', english: 'to use' }
+]
+
+const verbs = first30.concat(second30).concat(third30)
 
 const definitions = define(verbs)
 

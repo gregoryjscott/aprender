@@ -17,7 +17,7 @@ module.exports = function (words) {
       word = wordPicker.next()
 
       if (language === 'Spanish') {
-        yes = 'Si'
+        yes = 'Sí'
         definition = word.spanish
         word = word.english
       } else {

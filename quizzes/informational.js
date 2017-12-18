@@ -14,7 +14,7 @@ const informational = [
     checkAnswer: answer => {
       const correctAnswers = ['bien', 'mal']
       if (correctAnswers.includes(answer.toLowerCase())) {
-        console.log(colors.green(`Si, si, si! "${answer}" is correct!\n`))
+        console.log(colors.green(`Sí, si, si! "${answer}" is correct!\n`))
         return true
       } else {
         const answersString = correctAnswers.join(', ')

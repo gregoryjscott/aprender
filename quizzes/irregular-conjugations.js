@@ -20,7 +20,7 @@ function checkAnswer(answer) {
 
   if (forgive(answer) === forgive(correctAnswer)) {
     console.log(
-      colors.green(`Si, Si, Si! "${pronoun.spanish} ${correctAnswer}" is correct!\n`)
+      colors.green(`Sí, Sí, Sí! "${pronoun.spanish} ${correctAnswer}" is correct!\n`)
     )
     return true
   } else {

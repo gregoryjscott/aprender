@@ -35,9 +35,6 @@ let correctCount = 0
 let totalCount = 0
 
 function start() {
-  process.stdin.setEncoding('utf8')
-  process.stdin.on('readable', readAnswer)
-
   clearScreen()
   console.log('Hola!')
   for (var i = 0; i < quizzes.length; i++) {
@@ -55,9 +52,12 @@ function readAnswer() {
   if (answer !== null) {
     answer = answer.trim()
 
-    if (answer === 'salida') stop()
-
-    if (!pickedQuiz) {
+    if (answer === 'volver') {
+      pickedQuiz = null
+      start()
+    } else if (answer === 'salida') {
+      stop()
+    } else if (!pickedQuiz) {
       pickedQuiz = determineQuiz(answer)
 
       console.log(colors.green(`\nLet's learn ${pickedQuiz.name}!\n`))
@@ -91,7 +91,7 @@ function clearScreen() {
 }
 
 function explainExit() {
-  console.log(colors.grey(`  (Type "salida" to exit.)`))
+  console.log(colors.grey(`  (Type "volver" to go back or "salida" to exit.)`))
 }
 
 function stop() {
@@ -103,5 +103,8 @@ function stop() {
   console.log()
   process.exit()
 }
+
+process.stdin.setEncoding('utf8')
+process.stdin.on('readable', readAnswer)
 
 start()

@@ -97,7 +97,7 @@ function explainExit() {
 function stop() {
   clearScreen()
 
-  const percentage = Math.round(correctCount/totalCount * 100, 2)
+  const percentage = Math.round(correctCount / totalCount * 100, 2)
   console.log()
   console.log(`Your score is ${correctCount} / ${totalCount} = ${percentage}%.`)
   console.log()

@@ -31,7 +31,7 @@ const verbs = [
     ellosEllasUstedes: 'son',
     english: 'to be (permanent)'
   },
-  { spanish: 'estar', yo: 'estoy', english: 'to be (temporary)'},
+  { spanish: 'estar', yo: 'estoy', english: 'to be (temporary)' },
   {
     spanish: 'poder',
     yo: 'puedo',

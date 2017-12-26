@@ -12,7 +12,9 @@ function askQuestion() {
   pronoun = pronounPicker.next()
   verb = verbPicker.next()
 
-  console.log(`Conjugate the verb "${verb.spanish}" for the pronoun "${pronoun.spanish}".`)
+  console.log(
+    `Conjugate the verb "${verb.spanish}" for the pronoun "${pronoun.spanish}".`
+  )
 }
 
 function checkAnswer(answer) {
@@ -20,7 +22,9 @@ function checkAnswer(answer) {
 
   if (forgive(answer) === forgive(correctAnswer)) {
     console.log(
-      colors.green(`Sí, Sí, Sí! "${pronoun.spanish} ${correctAnswer}" is correct!\n`)
+      colors.green(
+        `Sí, Sí, Sí! "${pronoun.spanish} ${correctAnswer}" is correct!\n`
+      )
     )
     return true
   } else {

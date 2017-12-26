@@ -49,21 +49,16 @@ function determineCorrectAnswer() {
     case 'Tu':
       return verb.tu || `${start}${middle}s`
     case 'El':
-      return verb.el || `${start}${middle}`
     case 'Ella':
-      return verb.ella || `${start}${middle}`
     case 'Usted':
-      return verb.usted || `${start}${middle}`
+      return verb.elEllaUsted || `${start}${middle}`
     case 'Nosotros':
-      return verb.nosotros || `${start}${middle}mos`
     case 'Nosotras':
-      return verb.nosotras || `${start}${middle}mos`
+      return verb.nosotrosNosotras || `${start}${middle}mos`
     case 'Ellos':
-      return verb.ellos || `${start}${middle}n`
     case 'Ellas':
-      return verb.ellas || `${start}${middle}n`
     case 'Ustedes':
-      return verb.ustedes || `${start}${middle}n`
+      return verb.ellosEllasUstedes || `${start}${middle}n`
     default:
       oops()
   }

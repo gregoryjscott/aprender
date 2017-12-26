@@ -31,7 +31,6 @@ function checkAnswer(answer) {
 
 function determineCorrectAnswer() {
   const start = verb.substr(0, verb.length - 2)
-  let middle
 
   if (verb.endsWith('ar')) {
     switch (pronoun) {

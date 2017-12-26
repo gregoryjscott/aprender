@@ -1,54 +1,140 @@
 const define = require('../define')
 
 const verbs = [
-  { spanish: 'hacer', yo: 'hago', english: 'to do' }, // to make
-  { spanish: 'poner', yo: 'pongo', english: 'to put' },
-  { spanish: 'salir', yo: 'salgo', english: 'to go out' },
-  { spanish: 'caer', yo: 'me caigo', english: 'to fall' },
-  { spanish: 'traer', yo: 'traigo', english: 'to bring' },
-  { spanish: 'venir', yo: 'vengo', english: 'to come' },
+  {
+    spanish: 'hacer',
+    english: 'to do', // to make
+    present: {
+      yo: 'hago'
+    }
+  },
+  {
+    spanish: 'poner',
+    english: 'to put',
+    present: {
+      yo: 'pongo'
+    }
+  },
+  {
+    spanish: 'salir',
+    english: 'to go out',
+    present: {
+      yo: 'salgo'
+    }
+  },
+  {
+    spanish: 'caer',
+    english: 'to fall',
+    present: {
+      yo: 'me caigo'
+    }
+  },
+  {
+    spanish: 'traer',
+    english: 'to bring',
+    present: {
+      yo: 'traigo'
+    }
+  },
+  {
+    spanish: 'venir',
+    english: 'to come',
+    present: {
+      yo: 'vengo'
+    }
+  },
   {
     spanish: 'tener',
-    yo: 'tengo',
-    tu: 'tienes',
-    elEllaUsted: 'tiene',
-    nosotrosNosotras: 'tenemos',
-    ellosEllasUstedes: 'tienen',
-    english: 'to have'
+    english: 'to have',
+    present: {
+      yo: 'tengo',
+      tu: 'tienes',
+      elEllaUsted: 'tiene',
+      nosotrosNosotras: 'tenemos',
+      ellosEllasUstedes: 'tienen'
+    }
   },
-  { spanish: 'decir', yo: 'digo', english: 'to say' },
-  { spanish: 'oir', yo: 'oigo', english: 'to listen' },
-  { spanish: 'ver', yo: 'veo', english: 'to see' },
-  { spanish: 'saber', yo: 'se', english: 'to know facts' },
-  { spanish: 'conocer', yo: 'conozco', english: 'to be familiar' },
-  { spanish: 'dar', yo: 'doy', english: 'to give' },
+  {
+    spanish: 'decir',
+    english: 'to say',
+    present: {
+      yo: 'digo'
+    }
+  },
+  {
+    spanish: 'oir',
+    english: 'to listen',
+    present: {
+      yo: 'oigo'
+    }
+  },
+  {
+    spanish: 'ver',
+    english: 'to see',
+    present: {
+      yo: 'veo'
+    }
+  },
+  {
+    spanish: 'saber',
+    english: 'to know facts',
+    present: {
+      yo: 'se'
+    }
+  },
+  {
+    spanish: 'conocer',
+    english: 'to be familiar',
+    present: {
+      yo: 'conozco'
+    }
+  },
+  {
+    spanish: 'dar',
+    english: 'to give',
+    present: {
+      yo: 'doy'
+    }
+  },
   {
     spanish: 'ser',
-    yo: 'soy',
-    tu: 'eres',
-    elEllaUsted: 'es',
-    nosotrosNosotras: 'somos',
-    ellosEllasUstedes: 'son',
-    english: 'to be (permanent)'
+    english: 'to be (permanent)',
+    present: {
+      yo: 'soy',
+      tu: 'eres',
+      elEllaUsted: 'es',
+      nosotrosNosotras: 'somos',
+      ellosEllasUstedes: 'son'
+    }
   },
-  { spanish: 'estar', yo: 'estoy', english: 'to be (temporary)' },
+  {
+    spanish: 'estar',
+    english: 'to be (temporary)',
+    present: {
+      yo: 'estoy'
+    }
+  },
   {
     spanish: 'poder',
-    yo: 'puedo',
-    tu: 'puedes',
-    elEllaUsted: 'puede',
-    nosotrosNosotras: 'podemos',
-    ellosEllasUstedes: 'pueden',
-    english: 'to be able'
+    english: 'to be able',
+    present: {
+      yo: 'puedo',
+      tu: 'puedes',
+      elEllaUsted: 'puede',
+      nosotrosNosotras: 'podemos',
+      ellosEllasUstedes: 'pueden'
+    }
   },
   {
     spanish: 'ir',
-    yo: 'voy',
-    tu: 'vas',
-    elEllaUsted: 'va',
-    nosotrosNosotras: 'vamos',
-    ellosEllasUstedes: 'van',
-    english: 'to go'
+    english: 'to go',
+    present: {
+      yo: 'voy',
+      tu: 'vas',
+      elEllaUsted: 'va',
+      nosotrosNosotras: 'vamos',
+      ellosEllasUstedes: 'van'
+    }
   }
 ]
 

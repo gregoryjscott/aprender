@@ -49,20 +49,20 @@ function determineCorrectAnswer() {
 
   switch (pronoun.spanish) {
     case 'Yo':
-      return verb.yo || `${start}o`
+      return verb.present && verb.present.yo || `${start}o`
     case 'Tu':
-      return verb.tu || `${start}${middle}s`
+      return verb.present && verb.present.tu || `${start}${middle}s`
     case 'El':
     case 'Ella':
     case 'Usted':
-      return verb.elEllaUsted || `${start}${middle}`
+      return verb.present && verb.present.elEllaUsted || `${start}${middle}`
     case 'Nosotros':
     case 'Nosotras':
-      return verb.nosotrosNosotras || `${start}${middle}mos`
+      return verb.present && verb.present.nosotrosNosotras || `${start}${middle}mos`
     case 'Ellos':
     case 'Ellas':
     case 'Ustedes':
-      return verb.ellosEllasUstedes || `${start}${middle}n`
+      return verb.present && verb.present.ellosEllasUstedes || `${start}${middle}n`
     default:
       oops()
   }

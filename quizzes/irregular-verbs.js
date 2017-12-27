@@ -6,6 +6,13 @@ const verbs = [
     english: 'to do', // to make
     present: {
       yo: 'hago'
+    },
+    preterit: {
+      yo: 'hice',
+      tu: 'hiciste',
+      elEllaUsted: 'hizo',
+      nosotrosNosotras: 'hicimos',
+      ellosEllasUstedes: 'hicieron'
     }
   },
   {
@@ -52,6 +59,13 @@ const verbs = [
       elEllaUsted: 'tiene',
       nosotrosNosotras: 'tenemos',
       ellosEllasUstedes: 'tienen'
+    },
+    preterit: {
+      yo: 'tuve',
+      tu: 'tuviste',
+      elEllaUsted: 'tuvo',
+      nosotrosNosotras: 'tuvimos',
+      ellosEllasUstedes: 'tuvieron'
     }
   },
   {
@@ -105,6 +119,13 @@ const verbs = [
       elEllaUsted: 'es',
       nosotrosNosotras: 'somos',
       ellosEllasUstedes: 'son'
+    },
+    preterit: {
+      yo: 'fui',
+      tu: 'fuiste',
+      elEllaUsted: 'fue',
+      nosotrosNosotras: 'fuimos',
+      ellosEllasUstedes: 'fueron'
     }
   },
   {
@@ -112,6 +133,13 @@ const verbs = [
     english: 'to be (temporary)',
     present: {
       yo: 'estoy'
+    },
+    preterit: {
+      yo: 'estuve',
+      tu: 'estuviste',
+      elEllaUsted: 'estuvo',
+      nosotrosNosotras: 'estuvimos',
+      ellosEllasUstedes: 'estuvieron'
     }
   },
   {

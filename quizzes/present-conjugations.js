@@ -69,7 +69,7 @@ function oops() {
 }
 
 module.exports = {
-  name: 'Conjugations',
+  name: 'Present Conjugations',
   askQuestion,
   checkAnswer
 }

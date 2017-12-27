@@ -73,7 +73,7 @@ function oops() {
 }
 
 module.exports = {
-  name: 'Irregular Conjugations',
+  name: 'Present Irregular Conjugations',
   askQuestion,
   checkAnswer
 }

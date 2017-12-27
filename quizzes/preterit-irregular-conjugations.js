@@ -53,7 +53,7 @@ function determineCorrectAnswer() {
       default:
         oops()
     }
-  } else if (verb.spanish.endsWith('er') || verb.endsWith('ir')) {
+  } else if (verb.spanish.endsWith('er') || verb.spanish.endsWith('ir')) {
     switch (pronoun.spanish) {
       case 'Yo':
         return verb.preterit && verb.preterit.yo || `${start}í`

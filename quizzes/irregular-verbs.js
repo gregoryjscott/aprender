@@ -87,6 +87,13 @@ const verbs = [
     english: 'to see',
     present: {
       yo: 'veo'
+    },
+    imperfect: {
+      yo: 'veía',
+      tu: 'veías',
+      elEllaUsted: 'veía',
+      nosotrosNosotras: 'veíamos',
+      ellosEllasUstedes: 'veían'
     }
   },
   {
@@ -126,6 +133,13 @@ const verbs = [
       elEllaUsted: 'fue',
       nosotrosNosotras: 'fuimos',
       ellosEllasUstedes: 'fueron'
+    },
+    imperfect: {
+      yo: 'era',
+      tu: 'eras',
+      elEllaUsted: 'era',
+      nosotrosNosotras: 'eramos',
+      ellosEllasUstedes: 'eran'
     }
   },
   {
@@ -169,6 +183,13 @@ const verbs = [
       elEllaUsted: 'fue',
       nosotrosNosotras: 'fuimos',
       ellosEllasUstedes: 'fueron'
+    },
+    imperfect: {
+      yo: 'iba',
+      tu: 'ibas',
+      elEllaUsted: 'iba',
+      nosotrosNosotras: 'ibamos',
+      ellosEllasUstedes: 'iban'
     }
   }
 ]

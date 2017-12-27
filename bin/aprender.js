@@ -27,6 +27,7 @@ let quizzes = [
   require('../quizzes/preterit-conjugations'),
   require('../quizzes/preterit-irregular-conjugations'),
   require('../quizzes/imperfect-conjugations'),
+  require('../quizzes/imperfect-irregular-conjugations'),
   require('../quizzes/baseball')
 ]
 quizzes.push(everything(quizzes))

@@ -162,6 +162,13 @@ const verbs = [
       elEllaUsted: 'va',
       nosotrosNosotras: 'vamos',
       ellosEllasUstedes: 'van'
+    },
+    preterit: {
+      yo: 'fui',
+      tu: 'fuiste',
+      elEllaUsted: 'fue',
+      nosotrosNosotras: 'fuimos',
+      ellosEllasUstedes: 'fueron'
     }
   }
 ]

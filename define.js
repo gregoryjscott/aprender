@@ -1,4 +1,5 @@
 const colors = require('colors/safe')
+const forgive = require('./forgive')
 const random = require('./random')
 const picker = require('./picker')
 
@@ -30,7 +31,7 @@ module.exports = function (words) {
     },
 
     checkAnswer: answer => {
-      if (answer.toLowerCase() === definition.toLowerCase()) {
+      if (forgive(answer.toLowerCase()) === forgive(definition.toLowerCase())) {
         console.log(colors.green(`${yes}, ${yes}, ${yes}! "${answer}" is correct!\n`))
         return true
       } else {

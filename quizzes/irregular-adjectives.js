@@ -17,7 +17,7 @@ const adjectives = [
   { spanish: 'roto', english: 'broken' },
   { spanish: 'satisfecho', english: 'satisfied' },
   { spanish: 'suelto', english: 'released' },
-  { spanish: 'visto', english: 'seen' }, // clear, obvious
+  { spanish: 'visto', english: 'seen' } // clear, obvious
 ]
 const definitions = define(adjectives)
 

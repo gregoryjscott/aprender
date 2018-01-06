@@ -7,7 +7,6 @@ const greetings = [
   { spanish: 'Buenas noches', english: 'Good night' },
   { spanish: 'Buenas tardes', english: 'Good afternoon' }
 ]
-
 const definitions = define(greetings)
 
 module.exports = {

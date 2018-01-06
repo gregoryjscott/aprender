@@ -19,7 +19,6 @@ const adjectives = [
   { spanish: 'suelto', english: 'released' },
   { spanish: 'visto', english: 'seen' }, // clear, obvious
 ]
-
 const definitions = define(adjectives)
 
 module.exports = {

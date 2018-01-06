@@ -3,6 +3,9 @@
 const colors = require('colors/safe')
 const everything = require('../quizzes/everything')
 
+let pickedQuiz
+let correctCount = 0
+let totalCount = 0
 let quizzes = [
   require('../quizzes/greetings'),
   require('../quizzes/informational'),
@@ -34,10 +37,6 @@ let quizzes = [
 ]
 quizzes.push(everything(quizzes))
 
-let pickedQuiz
-let correctCount = 0
-let totalCount = 0
-
 function start() {
   clearScreen()
   console.log('Hola!')
@@ -52,10 +51,8 @@ function start() {
 
 function readAnswer() {
   let answer = process.stdin.read()
-
   if (answer !== null) {
     answer = answer.trim()
-
     if (answer === 'volver') {
       pickedQuiz = null
       start()
@@ -63,17 +60,13 @@ function readAnswer() {
       stop()
     } else if (!pickedQuiz) {
       pickedQuiz = determineQuiz(answer)
-
       console.log(colors.green(`\nLet's learn ${pickedQuiz.name}!\n`))
-
       pickedQuiz.askQuestion()
       explainExit()
     } else {
       const correct = pickedQuiz.checkAnswer(answer)
-
       if (correct) correctCount++
       totalCount++
-
       pickedQuiz.askQuestion()
       explainExit()
     }
@@ -83,10 +76,8 @@ function readAnswer() {
 function determineQuiz(answer) {
   const number = parseInt(answer)
   if (isNaN(number)) stop()
-
   const quiz = quizzes[number - 1]
   if (!quiz) stop()
-
   return quiz
 }
 
@@ -100,7 +91,6 @@ function explainExit() {
 
 function stop() {
   clearScreen()
-
   const percentage = Math.round(correctCount / totalCount * 100, 2)
   console.log()
   console.log(`Your score is ${correctCount} / ${totalCount} = ${percentage}%.`)
@@ -110,5 +100,4 @@ function stop() {
 
 process.stdin.setEncoding('utf8')
 process.stdin.on('readable', readAnswer)
-
 start()

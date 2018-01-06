@@ -14,7 +14,6 @@ const months = [
   { spanish: 'noviembre', english: 'November' },
   { spanish: 'diciembre', english: 'December' }
 ]
-
 const definitions = define(months)
 
 module.exports = {

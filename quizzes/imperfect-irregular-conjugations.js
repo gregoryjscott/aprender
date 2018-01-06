@@ -11,13 +11,11 @@ const verbPicker = picker(verbs.words)
 function askQuestion() {
   pronoun = pronounPicker.next()
   verb = verbPicker.next()
-
   console.log(`Conjugate "${verb.spanish}" for "${pronoun.spanish}" in imperfect tense.`)
 }
 
 function checkAnswer(answer) {
   const correctAnswer = determineCorrectAnswer()
-
   if (forgive(answer) === forgive(correctAnswer)) {
     console.log(
       colors.green(`Sí, Sí, Sí! "${pronoun.spanish} ${correctAnswer}" is correct!\n`)
@@ -31,7 +29,6 @@ function checkAnswer(answer) {
 
 function determineCorrectAnswer() {
   const start = verb.spanish.substr(0, verb.spanish.length - 2)
-
   if (verb.spanish.endsWith('ar')) {
     switch (pronoun.spanish) {
       case 'Yo':

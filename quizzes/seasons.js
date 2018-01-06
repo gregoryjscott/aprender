@@ -6,7 +6,6 @@ const seasons = [
   { spanish: 'el otoño', english: 'autumn' },
   { spanish: 'el invierno', english: 'winter' }
 ]
-
 const definitions = define(seasons)
 
 module.exports = {

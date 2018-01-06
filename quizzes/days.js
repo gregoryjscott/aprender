@@ -9,7 +9,6 @@ const days = [
   { spanish: 'viernes', english: 'Friday' },
   { spanish: 'sabado', english: 'Saturday' }
 ]
-
 const definitions = define(days)
 
 module.exports = {

@@ -12,7 +12,6 @@ const pronouns = [
   { spanish: 'Ellas', english: 'They (female)' },
   { spanish: 'Ustedes', english: "Y'all" }
 ]
-
 const definitions = define(pronouns)
 
 module.exports = {

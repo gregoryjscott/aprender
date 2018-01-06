@@ -32,7 +32,6 @@ const first30 = [
   { spanish: 'caminar', english: 'to walk' },
   { spanish: 'amar', english: 'to love' }
 ]
-
 const second30 = [
   { spanish: 'llegar', english: 'to arrive' },
   { spanish: 'aprender', english: 'to learn' },
@@ -98,9 +97,7 @@ const third30 = [
   { spanish: 'quemar', english: 'to burn' },
   { spanish: 'usar', english: 'to use' }
 ]
-
 const verbs = first30.concat(second30).concat(third30)
-
 const definitions = define(verbs)
 
 module.exports = {

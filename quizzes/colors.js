@@ -11,7 +11,6 @@ const colors = [
   { spanish: 'verde', english: 'green' },
   { spanish: 'rosa', english: 'pink' }
 ]
-
 const definitions = define(colors)
 
 module.exports = {

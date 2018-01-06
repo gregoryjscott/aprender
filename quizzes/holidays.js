@@ -10,7 +10,6 @@ const holidays = [
   { spanish: 'El dia de padres', english: `Father's Day` },
   { spanish: 'El dia de accion de gracias', english: 'Thanksgiving Day' }
 ]
-
 const definitions = define(holidays)
 
 module.exports = {

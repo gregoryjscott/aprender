@@ -6,7 +6,6 @@ const directions = [
   { spanish: 'sur', english: 'south' },
   { spanish: 'oeste', english: 'west' }
 ]
-
 const definitions = define(directions)
 
 module.exports = {

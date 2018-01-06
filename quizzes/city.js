@@ -37,7 +37,6 @@ const city = [
   { spanish: 'la tienda', english: 'store' },
   { spanish: 'el teatro', english: 'theatre' }
 ]
-
 const definitions = define(city)
 
 module.exports = {

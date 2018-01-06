@@ -21,7 +21,6 @@ const weather = [
   { spanish: 'Hay un tsunami.', english: 'There is a tsunami.' },
   { spanish: 'Hay un fuego.', english: 'There is a fire.' } // incendio
 ]
-
 const definitions = define(weather)
 
 module.exports = {

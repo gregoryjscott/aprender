@@ -26,7 +26,6 @@ const clothing = [
   { spanish: 'las gafas del sol', english: 'sunglasses' },
   { spanish: 'el sueter', english: 'sweater' }
 ]
-
 const definitions = define(clothing)
 
 module.exports = {

@@ -32,7 +32,6 @@ function checkAnswer(answer) {
 function determineCorrectAnswer() {
   const start = verb.substr(0, verb.length - 2)
   let middle
-
   if (verb.endsWith('ar')) {
     middle = 'a'
   } else if (verb.endsWith('er')) {
@@ -42,7 +41,6 @@ function determineCorrectAnswer() {
   } else {
     oops()
   }
-
   switch (pronoun) {
     case 'Yo':
       return `${start}o`

@@ -11,7 +11,6 @@ const verbPicker = picker(verbs.words)
 function askQuestion() {
   pronoun = pronounPicker.next()
   verb = verbPicker.next()
-
   console.log(
     `Conjugate the verb "${verb.spanish}" for the pronoun "${pronoun.spanish}".`
   )
@@ -19,7 +18,6 @@ function askQuestion() {
 
 function checkAnswer(answer) {
   const correctAnswer = determineCorrectAnswer()
-
   if (forgive(answer) === forgive(correctAnswer)) {
     console.log(
       colors.green(
@@ -36,7 +34,6 @@ function checkAnswer(answer) {
 function determineCorrectAnswer() {
   const start = verb.spanish.substr(0, verb.spanish.length - 2)
   let middle
-
   if (verb.spanish.endsWith('ar')) {
     middle = 'a'
   } else if (verb.spanish.endsWith('er')) {
@@ -46,7 +43,6 @@ function determineCorrectAnswer() {
   } else {
     oops()
   }
-
   switch (pronoun.spanish) {
     case 'Yo':
       return verb.present && verb.present.yo || `${start}o`

@@ -204,7 +204,6 @@ const baseball = [
   { spanish: 'winning hit', english: 'hit de oro' },
   { spanish: 'winning pitcher', english: 'lanzador ganador' }
 ]
-
 const definitions = define(baseball)
 
 module.exports = {

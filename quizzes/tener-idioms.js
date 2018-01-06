@@ -18,7 +18,6 @@ const idioms = [
   { spanish: 'tener suerte', english: 'to be lucky' },
   { spanish: 'tener vergüenza de', english: 'to be embarrassed of' },
 ]
-
 const definitions = define(idioms)
 
 module.exports = {

@@ -1,8 +1,7 @@
 # aprender
 
-CLI to help me learn Spanish.
+`aprender` is a CLI to help me learn Spanish.
 
-## Usage
+Install Node.js, then run `npm install aprender -g`. After that, you can run `aprender` and pick a category to learn.
 
-1. Run `npm install`.
-2. Run `npm start`.
+Yo hablo español muy mal. I'm sure there are mistakes and incorrect assumptions. A pull request would make my day.

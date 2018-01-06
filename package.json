@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "CLI to help me learn Spanish.",
   "scripts": {
-    "format": "prettier --no-semi --single-quote --write **/*.js"
+    "format": "prettier --no-semi --single-quote --write *.js **/*.js"
   },
   "bin": {
     "aprender": "bin/aprender.js"

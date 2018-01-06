@@ -5,7 +5,7 @@ module.exports = function(things) {
   return {
     next: () => {
       if (notPicked.length === 0) {
-        notPicked = shuffle(things, {copy: true})
+        notPicked = shuffle(things, { copy: true })
       }
       return notPicked.pop()
     }

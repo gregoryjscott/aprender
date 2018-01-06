@@ -3,11 +3,8 @@ const forgive = require('./forgive')
 const random = require('./random')
 const picker = require('./picker')
 
-module.exports = function (words) {
-  const languages = [
-    'Spanish',
-    'English'
-  ]
+module.exports = function(words) {
+  const languages = ['Spanish', 'English']
   let word, definition, yes
   const wordPicker = picker(words)
   return {
@@ -28,7 +25,9 @@ module.exports = function (words) {
 
     checkAnswer: answer => {
       if (forgive(answer.toLowerCase()) === forgive(definition.toLowerCase())) {
-        console.log(colors.green(`${yes}, ${yes}, ${yes}! "${answer}" is correct!\n`))
+        console.log(
+          colors.green(`${yes}, ${yes}, ${yes}! "${answer}" is correct!\n`)
+        )
         return true
       } else {
         console.log(colors.red(`No. It's "${definition}".\n`))

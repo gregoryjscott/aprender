@@ -60,7 +60,6 @@ function answerStartsWith(answer, beginning) {
     return false
   }
 }
-
 const quizzes = ['definitions', 'answerQuestionsInSpanish']
 const definitions = define(informational)
 let currentQuiz, questionToAnswer

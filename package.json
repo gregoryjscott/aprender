@@ -15,6 +15,6 @@
     "shuffle-array": "^1.0.1"
   },
   "devDependencies": {
-    "prettier": "^1.5.3"
+    "prettier": "^1.9.2"
   }
 }

@@ -10,7 +10,6 @@ const questions = [
   { spanish: '¿Cuanto?', english: 'How much?' }, // or How many?
   { spanish: '¿Como?', english: 'How?' }
 ]
-
 const definitions = define(questions)
 
 module.exports = {

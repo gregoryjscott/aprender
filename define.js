@@ -8,15 +8,12 @@ module.exports = function (words) {
     'Spanish',
     'English'
   ]
-
   let word, definition, yes
   const wordPicker = picker(words)
-
   return {
     askQuestion: () => {
       const language = random(languages)
       word = wordPicker.next()
-
       if (language === 'Spanish') {
         yes = 'Sí'
         definition = word.spanish
@@ -26,7 +23,6 @@ module.exports = function (words) {
         definition = word.english
         word = word.spanish
       }
-
       console.log(`What is "${word}" in ${language}?`)
     },
 

@@ -23,7 +23,6 @@ const food = [
   { spanish: 'arroz', english: 'rice' },
   { spanish: 'postre', english: 'dessert' }
 ]
-
 const definitions = define(food)
 
 module.exports = {

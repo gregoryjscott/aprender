@@ -28,7 +28,6 @@ const family = [
   { spanish: 'la tia', english: 'aunt' },
   { spanish: 'el tio', english: 'uncle' }
 ]
-
 const definitions = define(family)
 
 module.exports = {

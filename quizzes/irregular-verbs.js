@@ -193,7 +193,6 @@ const verbs = [
     }
   }
 ]
-
 const definitions = define(verbs)
 
 module.exports = {

@@ -13,7 +13,6 @@ function checkAnswer(answer) {
 
 module.exports = function(quizzes) {
   allQuizzes = quizzes
-
   return {
     name: 'Everything',
     askQuestion,

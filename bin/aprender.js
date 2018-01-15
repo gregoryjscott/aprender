@@ -31,6 +31,7 @@ let quizzes = [
   require('../quizzes/irregular-verbs'),
   require('../quizzes/present-irregular-conjugations'),
   require('../quizzes/clothing'),
+  require('../quizzes/body'),
   require('../quizzes/preterit-conjugations'),
   require('../quizzes/preterit-irregular-conjugations'),
   require('../quizzes/imperfect-conjugations'),

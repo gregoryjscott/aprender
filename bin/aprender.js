@@ -28,6 +28,7 @@ let quizzes = [
   require('../quizzes/alphabet'),
   require('../quizzes/seasons'),
   require('../quizzes/weather'),
+  require('../quizzes/time'),
   require('../quizzes/irregular-verbs'),
   require('../quizzes/present-irregular-conjugations'),
   require('../quizzes/clothing'),

@@ -1,10 +1,14 @@
 module.exports = function(value) {
-  value = value.replace('á', 'a')
-  value = value.replace('é', 'e')
-  value = value.replace('í', 'i')
-  value = value.replace('ó', 'o')
-  value = value.replace('ú', 'u')
-  value = value.replace('ñ', 'n')
-  value = value.replace('ü', 'u')
+  value = replaceAll(value, 'á', 'a')
+  value = replaceAll(value, 'é', 'e')
+  value = replaceAll(value, 'í', 'i')
+  value = replaceAll(value, 'ó', 'o')
+  value = replaceAll(value, 'ú', 'u')
+  value = replaceAll(value, 'ñ', 'n')
+  value = replaceAll(value, 'ü', 'u')
   return value
+}
+
+function replaceAll(target, search, replacement) {
+  return target.split(search).join(replacement)
 }

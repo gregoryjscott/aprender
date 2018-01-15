@@ -26,7 +26,7 @@ module.exports = function(words) {
     checkAnswer: answer => {
       if (forgive(answer.toLowerCase()) === forgive(definition.toLowerCase())) {
         console.log(
-          colors.green(`${yes}, ${yes}, ${yes}! "${answer}" is correct!\n`)
+          colors.green(`${yes}, ${yes}, ${yes}! "${definition}" is correct!\n`)
         )
         return true
       } else {

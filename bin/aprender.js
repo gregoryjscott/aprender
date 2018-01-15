@@ -19,6 +19,7 @@ let quizzes = [
   require('../quizzes/days'),
   require('../quizzes/months'),
   require('../quizzes/foods'),
+  require('../quizzes/meals'),
   require('../quizzes/directions'),
   require('../quizzes/city'),
   require('../quizzes/family'),

@@ -14,6 +14,7 @@ let quizzes = [
   require('../quizzes/pronouns'),
   require('../quizzes/present-conjugations'),
   require('../quizzes/numbers'),
+  require('../quizzes/dates'),
   require('../quizzes/holidays'),
   require('../quizzes/colors'),
   require('../quizzes/days'),

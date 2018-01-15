@@ -1,7 +1,7 @@
 const define = require('../define')
 
 const first30 = [
-  { spanish: 'repitir', english: 'to repeat' },
+  // { spanish: 'repetir', english: 'to repeat' }, // moved to stem-changing
   { spanish: 'eschuchar', english: 'to listen' },
   { spanish: 'mirar', english: 'to watch' },
   { spanish: 'abrir', english: 'to open' },
@@ -81,7 +81,7 @@ const third30 = [
   { spanish: 'lastimar', english: 'to hurt' },
   { spanish: 'lavar', english: 'to wash' },
   { spanish: 'observar', english: 'to observe' },
-  { spanish: 'querer', english: 'to want' },
+  // { spanish: 'querer', english: 'to want' },  // moved to stem-changing
   { spanish: 'revisar', english: 'to review' },
   { spanish: 'aburrir', english: 'to get bored' },
   { spanish: 'cansar', english: 'to get tired' },

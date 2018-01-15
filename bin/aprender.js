@@ -25,6 +25,7 @@ let quizzes = [
   require('../quizzes/city'),
   require('../quizzes/family'),
   require('../quizzes/questions'),
+  require('../quizzes/alphabet'),
   require('../quizzes/seasons'),
   require('../quizzes/weather'),
   require('../quizzes/irregular-verbs'),

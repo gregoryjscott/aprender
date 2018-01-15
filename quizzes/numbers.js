@@ -31,6 +31,31 @@ numbers.push({ spanish: 'treinta', english: '30' })
 oneThroughNine.forEach(x =>
   numbers.push({ spanish: `treinta y ${x.spanish}`, english: `3${x.english}` })
 )
+numbers.push({ spanish: 'cuarenta', english: '40' })
+oneThroughNine.forEach(x =>
+  numbers.push({ spanish: `cuarenta y ${x.spanish}`, english: `4${x.english}` })
+)
+numbers.push({ spanish: 'cincuenta', english: '50' })
+oneThroughNine.forEach(x =>
+  numbers.push({ spanish: `cincuenta y ${x.spanish}`, english: `5${x.english}` })
+)
+numbers.push({ spanish: 'sesenta', english: '60' })
+oneThroughNine.forEach(x =>
+  numbers.push({ spanish: `sesenta y ${x.spanish}`, english: `6${x.english}` })
+)
+numbers.push({ spanish: 'setenta', english: '70' })
+oneThroughNine.forEach(x =>
+  numbers.push({ spanish: `setenta y ${x.spanish}`, english: `7${x.english}` })
+)
+numbers.push({ spanish: 'ochenta', english: '80' })
+oneThroughNine.forEach(x =>
+  numbers.push({ spanish: `ochenta y ${x.spanish}`, english: `8${x.english}` })
+)
+numbers.push({ spanish: 'noventa', english: '90' })
+oneThroughNine.forEach(x =>
+  numbers.push({ spanish: `noventa y ${x.spanish}`, english: `9${x.english}` })
+)
+numbers.push({ spanish: 'cien', english: '100'})
 const definitions = define(numbers)
 
 module.exports = {

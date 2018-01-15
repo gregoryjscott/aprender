@@ -9,25 +9,6 @@ const informational = [
     checkAnswer: answer => answerStartsWith(answer, 'Yo me llamo')
   },
   {
-    spanish: '¿Cómo está?',
-    english: 'How are you?',
-    checkAnswer: answer => {
-      const correctAnswers = ['bien', 'mal']
-      if (correctAnswers.includes(answer.toLowerCase())) {
-        console.log(colors.green(`Sí, sí, sí! "${answer}" is correct!\n`))
-        return true
-      } else {
-        const answersString = correctAnswers.join(', ')
-        console.log(
-          colors.red(
-            `No. The answer should be one of the following: ${answersString}.\n`
-          )
-        )
-        return false
-      }
-    }
-  },
-  {
     spanish: '¿Dónde vive?',
     english: 'Where do you live?',
     checkAnswer: answer => answerStartsWith(answer, 'Yo vivo en')

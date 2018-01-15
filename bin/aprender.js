@@ -8,6 +8,7 @@ let correctCount = 0
 let totalCount = 0
 let quizzes = [
   require('../quizzes/greetings'),
+  require('../quizzes/farewells'),
   require('../quizzes/informational'),
   require('../quizzes/verbs'),
   require('../quizzes/pronouns'),

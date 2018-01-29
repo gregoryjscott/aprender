@@ -9,7 +9,7 @@ const house = [
   { spanish: 'el cuarto', english: 'room' },
   { spanish: 'el cuarto de baño', english: 'bathroom' },
   { spanish: 'el dormitorio', english: 'bedroom' },
-  { spanish: 'la habitación', english: 'room' },
+  // { spanish: 'la habitación', english: 'room' }, // alternate for room?
   { spanish: 'la llave', english: 'key' },
   { spanish: 'el patio', english: 'yard' },
   { spanish: 'el piso', english: 'floor' }, // apartment
@@ -29,7 +29,9 @@ const house = [
   { spanish: 'la silla', english: 'chair' },
   { spanish: 'el sillón', english: 'armchair' },
   { spanish: 'el sofá', english: 'sofa' },
-  { spanish: 'el teléfono', english: 'telephone' }
+  { spanish: 'el teléfono', english: 'telephone' },
+  { spanish: 'la pared', english: 'wall' },
+  { spanish: 'la ventana', english: 'window' }
 ]
 const definitions = define(house)
 

@@ -43,6 +43,7 @@ let quizzes = [
   require('../quizzes/imperfect-irregular-conjugations'),
   require('../quizzes/tener-idioms'),
   require('../quizzes/irregular-adjectives'),
+  require('../quizzes/house'),
   require('../quizzes/baseball')
 ]
 quizzes.push(everything(quizzes))

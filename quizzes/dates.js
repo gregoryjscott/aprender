@@ -12,8 +12,10 @@ const dates = [
     checkAnswer: answer => {
       const correctAnswer = `Hoy es ${today()}`
       if (forgive(answer) === forgive(correctAnswer)) {
-          console.log(colors.green(`Sí, sí, sí! "${correctAnswer}" is correct!\n`))
-          return true
+        console.log(
+          colors.green(`Sí, sí, sí! "${correctAnswer}" is correct!\n`)
+        )
+        return true
       } else {
         console.log(colors.red(`No. The answer is: ${correctAnswer}.\n`))
         return false
@@ -26,8 +28,10 @@ const dates = [
     checkAnswer: answer => {
       const correctAnswer = `Mañana es ${tomorrow()}`
       if (forgive(answer) === forgive(correctAnswer)) {
-          console.log(colors.green(`Sí, sí, sí! "${correctAnswer}" is correct!\n`))
-          return true
+        console.log(
+          colors.green(`Sí, sí, sí! "${correctAnswer}" is correct!\n`)
+        )
+        return true
       } else {
         console.log(colors.red(`No. The answer is: ${correctAnswer}.\n`))
         return false
@@ -40,14 +44,16 @@ const dates = [
     checkAnswer: answer => {
       const correctAnswer = `Ayer fue ${yesterday()}`
       if (forgive(answer) === forgive(correctAnswer)) {
-          console.log(colors.green(`Sí, sí, sí! "${correctAnswer}" is correct!\n`))
-          return true
+        console.log(
+          colors.green(`Sí, sí, sí! "${correctAnswer}" is correct!\n`)
+        )
+        return true
       } else {
         console.log(colors.red(`No. The answer is: ${correctAnswer}.\n`))
         return false
       }
     }
-  },
+  }
 ]
 
 function answerStartsWith(answer, beginning) {
@@ -90,7 +96,7 @@ module.exports = {
 }
 
 function yesterday() {
-  let date = new Date();
+  let date = new Date()
   date.setDate(date.getDate() - 1)
   return spanishDate(date)
 }
@@ -101,7 +107,7 @@ function today() {
 }
 
 function tomorrow() {
-  let date = new Date();
+  let date = new Date()
   date.setDate(date.getDate() + 1)
   return spanishDate(date)
 }

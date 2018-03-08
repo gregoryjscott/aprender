@@ -12,8 +12,14 @@ const time = [
   { spanish: 'Son la nueve y cuarto', english: "It's quarter past 9:00" },
   { spanish: 'Son las dos menos cinco', english: "It's 2:00 minus 5 minutes" },
   { spanish: 'Son cinco para las dos', english: "It's 5 minutes until 2:00" },
-  { spanish: 'Son las once de la mañana', english: "It's 11:00 in the morning" },
-  { spanish: 'Son las siete de la tarde', english: "It's 7:00 in the afternoon" },
+  {
+    spanish: 'Son las once de la mañana',
+    english: "It's 11:00 in the morning"
+  },
+  {
+    spanish: 'Son las siete de la tarde',
+    english: "It's 7:00 in the afternoon"
+  },
   { spanish: 'Son las diez de la noche', english: "It's 10:00 in the evening" },
   { spanish: 'Es mediodía', english: "It's noon" },
   { spanish: 'Es medianoche', english: "It's midnight" }

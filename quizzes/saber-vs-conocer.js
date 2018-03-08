@@ -12,7 +12,7 @@ const saberVsConocer = [
     checkAnswer: answer => answerIsCorrect(answer, 'saber')
   },
   {
-    question: "Do you know how to cook?",
+    question: 'Do you know how to cook?',
     checkAnswer: answer => answerIsCorrect(answer, 'saber')
   },
   {
@@ -20,13 +20,13 @@ const saberVsConocer = [
     checkAnswer: answer => answerIsCorrect(answer, 'conocer')
   },
   {
-    question: "Do you know Pedro Gómez?",
+    question: 'Do you know Pedro Gómez?',
     checkAnswer: answer => answerIsCorrect(answer, 'conocer')
   },
   {
-    question: "Are you familiar with the university?",
+    question: 'Are you familiar with the university?',
     checkAnswer: answer => answerIsCorrect(answer, 'conocer')
-  },
+  }
 ]
 
 function answerIsCorrect(answer, expected) {
@@ -34,9 +34,7 @@ function answerIsCorrect(answer, expected) {
     console.log(colors.green(`Sí, sí, sí! "${expected}" is correct!\n`))
     return true
   } else {
-    console.log(
-      colors.red(`No. The answer is "${expected}".\n`)
-    )
+    console.log(colors.red(`No. The answer is "${expected}".\n`))
     return false
   }
 }
@@ -46,9 +44,7 @@ module.exports = {
   name: 'Saber vs. Conocer',
   askQuestion: () => {
     questionToAnswer = random(saberVsConocer)
-    console.log(
-      `Saber or Conocer: "${questionToAnswer.question}".`
-    )
+    console.log(`Saber or Conocer: "${questionToAnswer.question}".`)
   },
   checkAnswer: answer => questionToAnswer.checkAnswer(answer)
 }

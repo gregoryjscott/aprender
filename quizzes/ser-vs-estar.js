@@ -8,15 +8,17 @@ const serVsEstar = [
     checkAnswer: answer => answerIsCorrect(answer, 'ser')
   },
   {
-    question: 'Used for permanent characteristics - like a person\'s job, nationality, or name',
+    question:
+      "Used for permanent characteristics - like a person's job, nationality, or name",
     checkAnswer: answer => answerIsCorrect(answer, 'ser')
   },
   {
-    question: "For indicationg where someone is from, what a object is made of, for ownership",
+    question:
+      'For indicationg where someone is from, what a object is made of, for ownership',
     checkAnswer: answer => answerIsCorrect(answer, 'ser')
   },
   {
-    question: "For telling time",
+    question: 'For telling time',
     checkAnswer: answer => answerIsCorrect(answer, 'ser')
   },
   {
@@ -24,15 +26,15 @@ const serVsEstar = [
     checkAnswer: answer => answerIsCorrect(answer, 'estar')
   },
   {
-    question: "Used for temporary conditions, like the water is cold",
+    question: 'Used for temporary conditions, like the water is cold',
     checkAnswer: answer => answerIsCorrect(answer, 'estar')
   },
   {
-    question: "For talking about your health",
+    question: 'For talking about your health',
     checkAnswer: answer => answerIsCorrect(answer, 'estar')
   },
   {
-    question: "For talking about where things are",
+    question: 'For talking about where things are',
     checkAnswer: answer => answerIsCorrect(answer, 'estar')
   }
 ]
@@ -42,9 +44,7 @@ function answerIsCorrect(answer, expected) {
     console.log(colors.green(`Sí, sí, sí! "${expected}" is correct!\n`))
     return true
   } else {
-    console.log(
-      colors.red(`No. The answer is "${expected}".\n`)
-    )
+    console.log(colors.red(`No. The answer is "${expected}".\n`))
     return false
   }
 }
@@ -54,9 +54,7 @@ module.exports = {
   name: 'Ser vs. Estar',
   askQuestion: () => {
     questionToAnswer = random(serVsEstar)
-    console.log(
-      `Ser or Estar: "${questionToAnswer.question}".`
-    )
+    console.log(`Ser or Estar: "${questionToAnswer.question}".`)
   },
   checkAnswer: answer => questionToAnswer.checkAnswer(answer)
 }

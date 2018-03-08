@@ -37,7 +37,10 @@ oneThroughNine.forEach(x =>
 )
 numbers.push({ spanish: 'cincuenta', english: '50' })
 oneThroughNine.forEach(x =>
-  numbers.push({ spanish: `cincuenta y ${x.spanish}`, english: `5${x.english}` })
+  numbers.push({
+    spanish: `cincuenta y ${x.spanish}`,
+    english: `5${x.english}`
+  })
 )
 numbers.push({ spanish: 'sesenta', english: '60' })
 oneThroughNine.forEach(x =>
@@ -55,7 +58,7 @@ numbers.push({ spanish: 'noventa', english: '90' })
 oneThroughNine.forEach(x =>
   numbers.push({ spanish: `noventa y ${x.spanish}`, english: `9${x.english}` })
 )
-numbers.push({ spanish: 'cien', english: '100'})
+numbers.push({ spanish: 'cien', english: '100' })
 const definitions = define(numbers)
 
 module.exports = {

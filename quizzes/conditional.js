@@ -54,7 +54,7 @@ function oops() {
 }
 
 module.exports = {
-  name: 'Conditional',
+  name: 'Conditional (Would)',
   askQuestion,
   checkAnswer
 }

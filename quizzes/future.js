@@ -54,7 +54,7 @@ function oops() {
 }
 
 module.exports = {
-  name: 'Future',
+  name: 'Future (Will)',
   askQuestion,
   checkAnswer
 }

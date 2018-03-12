@@ -45,6 +45,7 @@ let quizzes = [
   require('../quizzes/irregular-adjectives'),
   require('../quizzes/house'),
   require('../quizzes/materials'),
+  require('../quizzes/future'),
   require('../quizzes/baseball')
 ]
 quizzes.push(everything(quizzes))

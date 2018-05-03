@@ -62,7 +62,7 @@ const second30 = [
   { spanish: 'cambiar', english: 'to change' },
   { spanish: 'decidir', english: 'to decide' },
   { spanish: 'olvidar', english: 'to forget' },
-  { spanish: 'ensenar', english: 'to teacher' }
+  { spanish: 'ensenar', english: 'to teach' }
 ]
 
 const third30 = [

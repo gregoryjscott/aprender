@@ -47,7 +47,8 @@ let quizzes = [
   require('../quizzes/materials'),
   require('../quizzes/future'),
   require('../quizzes/conditional'),
-  require('../quizzes/baseball')
+  require('../quizzes/baseball'),
+  require('../quizzes/school')
 ]
 quizzes.push(everything(quizzes))
 

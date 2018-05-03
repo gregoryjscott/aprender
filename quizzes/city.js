@@ -22,7 +22,7 @@ const city = [
   { spanish: 'el mercado', english: 'market' },
   { spanish: 'la milla', english: 'mile' },
   { spanish: 'la muchacha', english: 'girl' },
-  { spanish: 'el muchocho', english: 'boy' },
+  { spanish: 'el muchacho', english: 'boy' },
   { spanish: 'la iglesia', english: 'church' },
   { spanish: 'el museo', english: 'museum' },
   { spanish: 'la oficina', english: 'office' },

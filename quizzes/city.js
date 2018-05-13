@@ -14,7 +14,7 @@ const city = [
   { spanish: 'la cuadra', english: 'block' },
   { spanish: 'el edificio', english: 'building' },
   { spanish: 'la escuela', english: 'school' },
-  { spanish: 'le esquina', english: 'corner' },
+  { spanish: 'la esquina', english: 'corner' },
   { spanish: 'la estacion de policia', english: 'police station' },
   { spanish: 'la gasolinera', english: 'gas station' },
   { spanish: 'el hombre', english: 'man' },

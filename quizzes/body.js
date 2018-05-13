@@ -7,7 +7,8 @@ const body = [
   { spanish: 'la cara', english: 'face' },
   { spanish: 'el cuerpo', english: 'body' },
   { spanish: 'el dedo', english: 'finger' },
-  { spanish: 'el diente', english: 'tooth' }, // la muela
+  { spanish: 'el diente', english: 'tooth' },
+  { spanish: 'la muela', english: 'molar' },
   { spanish: 'el estómago', english: 'stomach' },
   { spanish: 'los labios', english: 'lips' },
   { spanish: 'la lengua', english: 'tongue' },

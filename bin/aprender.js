@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 
+const readline = require('readline')
 const colors = require('colors/safe')
 const everything = require('../quizzes/everything')
 
@@ -51,6 +52,10 @@ let quizzes = [
   require('../quizzes/school')
 ]
 quizzes.push(everything(quizzes))
+const readLine = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
 
 function start() {
   clearScreen()
@@ -60,12 +65,11 @@ function start() {
     const name = quizzes[i].name
     console.log(`  ${colors.grey(`Type ${number} to learn ${name}.`)}`)
   }
-  explainExit()
   console.log()
+  explainExit()
 }
 
-function readAnswer() {
-  let answer = process.stdin.read()
+function readAnswer(answer) {
   if (answer !== null) {
     answer = answer.trim()
     if (answer === 'volver') {
@@ -102,17 +106,17 @@ function clearScreen() {
 
 function explainExit() {
   console.log(colors.grey(`  (Type "volver" to go back or "salida" to exit.)`))
+  readLine.prompt()
 }
 
 function stop() {
   clearScreen()
-  const percentage = Math.round(correctCount / totalCount * 100, 2)
+  const percentage = Math.round((correctCount / totalCount) * 100, 2)
   console.log()
   console.log(`Your score is ${correctCount} / ${totalCount} = ${percentage}%.`)
   console.log()
   process.exit()
 }
 
-process.stdin.setEncoding('utf8')
-process.stdin.on('readable', readAnswer)
+readLine.on('line', readAnswer)
 start()

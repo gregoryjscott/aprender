@@ -49,7 +49,8 @@ let quizzes = [
   require('../quizzes/future'),
   require('../quizzes/conditional'),
   require('../quizzes/baseball'),
-  require('../quizzes/school')
+  require('../quizzes/school'),
+  require('../quizzes/bikes')
 ]
 quizzes.push(everything(quizzes))
 const readLine = readline.createInterface({
